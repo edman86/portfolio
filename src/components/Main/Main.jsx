@@ -21,7 +21,7 @@ const Main = () => {
                 <Card 
                     name="getPizza"
                     image={getPizzaCover}
-                    description={['React', 'Redux', 'Redux-thunk', 'React Router', 'SASS', 'Firebase']}
+                    description={['React', 'Redux', 'Redux-thunk', 'React Router', 'Sass/SCSS', 'Firebase']}
                     appLink={'https://edmangetpizza.netlify.app/'}
                     repoLink={'https://github.com/edman86/getPizza'}
                     setOpen={openInfoBox}
@@ -41,7 +41,7 @@ const Main = () => {
                 <Card
                     name="Notes"
                     image={notesCover}
-                    description={['React', 'React Router', 'Redux Toolkit', 'SASS']}
+                    description={['React', 'React Router', 'Redux Toolkit', 'Sass/SCSS']}
                     appLink={'https://edman-notes.netlify.app/'}
                     repoLink={'https://github.com/edman86/notes-app'}
                     setOpen={openInfoBox}
