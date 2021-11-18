@@ -6,7 +6,10 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header__content">
-                    <h1 className="header__title">My Portfolio</h1>
+                    <div className="header__main-title">
+                        <h1 className="header__title">Edgar Manukyan</h1>
+                        <h2 className="header__subtitle">Front End Developer</h2>
+                    </div>
                     <a className="header__link" href="https://github.com/edman86/">
                         <AiFillGithub size="3em" color="#fff" />
                     </a>
