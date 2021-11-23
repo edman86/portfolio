@@ -2,10 +2,10 @@ import { AiFillGithub } from 'react-icons/ai';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
 import './card.scss';
 
-const Card = ({ name, image, description, appLink, repoLink, setOpen }) => {
+const Card = ({ name, image, description, appLink, repoLink, setOpen, colorModificator }) => {
     return (
-        <article className="card">
-            <header className="card__image-container">
+        <article className={`card card-color-modificator${colorModificator}`}>
+            <header className={`card__image-container image-container-color-modificator${colorModificator}`}>
                 <img className="card__image" src={image} alt={name} />
             </header>
             <main className="card__content">
@@ -20,17 +20,17 @@ const Card = ({ name, image, description, appLink, repoLink, setOpen }) => {
             </main>
             <footer className="card__footer">
                 <a className="link" href={repoLink}>
-                    <AiFillGithub size="2em" className="github-icon" />
+                    <AiFillGithub size="2.3em" className={`github-icon color-modificator${colorModificator}`} />
                 </a>
                 
                 <BsFillInfoCircleFill 
                     size="2em"
-                    className="info-icon"
+                    className={`info-icon color-modificator${colorModificator}`}
                     onClick={ () => setOpen(name) }
                 />
                 
                 <a className="link" href={appLink}>
-                    <button type="button" className="card__button">
+                    <button type="button" className={`card__button background-modificator${colorModificator}`}>
                         View project
                     </button>
                 </a>

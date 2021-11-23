@@ -11,7 +11,7 @@ const Header = () => {
                         <h2 className="header__subtitle">Front End Developer</h2>
                     </div>
                     <a className="header__link" href="https://github.com/edman86/">
-                        <AiFillGithub size="3em" color="#fff" />
+                        <AiFillGithub size="3em" className="header__icon" />
                     </a>
                 </div>    
             </div>

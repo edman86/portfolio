@@ -1,17 +1,29 @@
 .main {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
+    &__title {
+        margin: 0.5em 0 0;
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(227, 227, 231);
+        text-align: center;
+    }
 
+    &__projects {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        @media screen and (min-width: 576px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+    }
+    
     &__item {
-        margin: 0.5em;
+        margin: 0.7em;
     }
 
-    @media screen and (min-width: 576px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-    }
 }

@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .backdrop {
     width: 100%;
     height: 100%;
@@ -43,7 +45,7 @@
         z-index: 5;
 
         &:hover {
-            color: rgb(77, 107, 147);
+            color: $blue-dark-clr;
         }
     }
 
@@ -73,6 +75,16 @@
         flex-wrap: wrap;
         margin-bottom: 1em;
     }
+
+    &__category-link {
+        display: block;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     
     &__category-item {
         font-size: 1.5rem;
@@ -81,13 +93,8 @@
         background-color: rgb(227, 227, 231);
         color: red;
         border-radius: 1.5em;
-        margin-right: 0.5em;
-        margin-bottom: 0.2em;
         transition: background-color .1s linear;
         
-        &:last-child {
-            margin-right: 0;
-        }
     }
 
     &__footer {

@@ -1,0 +1,25 @@
+// dark theme
+$background-clr-dark: hsl(0, 0%, 10%);
+$background-lighter-clr-dark: hsl(0, 0%, 14%);
+$border-dark-clr: hsla(0, 0%, 100%, 0.07);
+$primary-clr: hsl(204, 100%, 50%);
+$primary-dark-clr: hsl(206, 100%, 47%);
+$gradient-blue-background: linear-gradient(135deg, hsl(204, 100%, 50%), hsl(196, 100%, 50%));
+$gradient-blue-dark-background: linear-gradient(0deg, hsl(200, 100%, 30%), hsl(196, 100%, 50%));
+$gradient-orange-background: linear-gradient(0deg, hsl(25, 100%, 50%), hsl(44, 100%, 50%)); 
+$gradient-purple-background: linear-gradient(0deg, hsl(259, 100%, 60%), hsl(259, 100%, 71%));
+
+// light theme
+$primary-clr-light: rgb(77, 107, 147);
+$card-shadow-clr-light: rgba(30,35,90,0.4);
+$light-gray: rgb(92, 99, 112);
+
+// modificators
+$blue-dark-clr: hsl(215, 100%, 50%);
+$purple-clr: hsl(259, 100%, 71%);
+$purple-dark-clr: hsl(259, 100%, 60%);
+$yellow-clr: hsl(44, 100%, 50%);
+$orange-clr: hsl(25, 100%, 50%);
+$orange-dark-clr: hsl(25, 100%, 35%);
+$red-dark-clr: hsl(347, 82%, 54%);
+$red-clr: hsl(343, 100%, 66%);

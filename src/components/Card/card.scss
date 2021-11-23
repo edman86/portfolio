@@ -1,17 +1,17 @@
+@import '../../variables';
+
 .card {
     width: 100%;
-    min-height: 470px;
-    box-shadow: 0 1px 2.5px 0 rgba(30,35,90,0.4);
+    min-height: 480px;
+    background-color: $border-dark-clr;
+    border: 1px solid $border-dark-clr;
     border-radius: 0.3em;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    overflow: hidden;
     transition: box-shadow 0.2s linear;
-
-    &:hover {
-        box-shadow: 0 1px 10px rgba(30,35,90,0.4);
-    } 
 
     &__image-container {
         position: relative;
@@ -27,6 +27,7 @@
         display: block;
         max-height: 200px;
         transition: transform 0.2s linear;
+        // transform: scale(0.93);
     }
 
     &__title {
@@ -34,6 +35,7 @@
         margin: 1rem 0 0;
         font-weight: bold;
         font-size: 1.5rem;
+        color: #fff;
         text-align: center;
     }
 
@@ -58,8 +60,8 @@
         font-weight: bold;
         text-transform: lowercase;
         padding: 0.3em 1em;
-        background-color: rgb(227, 227, 231);
-        color: rgb(92, 99, 112);
+        color: rgb(227, 227, 231);
+        background-color: $border-dark-clr;
         border-radius: 1.5em;
         margin-right: 0.5em;
         margin-bottom: 0.5em;
@@ -85,21 +87,21 @@
         margin-bottom: 0.2em;
         font-size: 1rem;
         font-family: inherit;
-        background-color: rgb(77, 107, 147);
-        border: none;
-        color: #fff;
         text-transform: uppercase;
+        background-color: $primary-clr;
+        border: none;
+        border-radius: 1.5em;
+        color: #fff;
         outline: none;
         padding: 0.5em 1em;
         cursor: pointer;
-        border-radius: 0.2em;
-        transition: background-color 0.2s linear, color 0.2s linear;
+        transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &:hover {
-            background-color: rgb(51, 71, 97);
+            background-color: $blue-dark-clr;
         }
     }
 
@@ -117,20 +119,117 @@
 }
 
 .github-icon {
-    color: rgb(77, 107, 147);
+    color: $primary-clr;
     transition: color 0.2s linear;
-
+    
     &:hover {
-        color: rgb(51, 71, 97);
+        color: $blue-dark-clr;
     } 
 }
 
 .info-icon {
     color: rgb(77, 107, 147);
     transition: color 0.2s linear;
-    cursor: pointer;
+    cursor: pointer; 
+}
 
-    &:hover {
-        color: rgb(51, 71, 97);
-    } 
+.color-modificator {
+    
+    &--blue {
+        color: $primary-clr;
+
+        &:hover {
+            color: $blue-dark-clr;
+        }
+    }
+
+    &--purple {
+        color: $purple-clr;
+
+        &:hover {
+            color: $purple-dark-clr;
+        } 
+    }
+
+    &--orange {
+        color: $orange-clr;
+        
+        &:hover {
+            color: $orange-dark-clr;    
+        }
+    }
+
+    &--red {
+        color: $red-clr;
+    }
+}
+
+.background-modificator {
+    
+    &--blue {
+        background: $gradient-blue-dark-background;
+
+        &:hover {
+            box-shadow: 0 1px 10px $primary-clr;
+        }
+    }
+    
+    &--purple {
+        background: $gradient-purple-background;
+        
+        &:hover {
+            box-shadow: 0 1px 10px $purple-clr;
+        } 
+    }
+
+    &--orange {
+        background: $gradient-orange-background;
+
+        &:hover {
+            box-shadow: 0 1px 10px $orange-clr;
+        }
+    }
+
+    &--red {
+        background-color: $red-clr;
+    }
+}
+
+.image-container-color-modificator {
+    &--blue {
+        background: $gradient-blue-dark-background;
+    }
+    
+    &--purple {
+        background: $gradient-purple-background;
+    }
+
+    &--orange {
+        background: $gradient-orange-background;
+    }
+
+    &--red {
+        background: $red-clr;
+    }
+}
+
+.card-color-modificator {
+    &--blue {
+        
+        &:hover {
+            box-shadow: 0 1px 10px $primary-clr;
+        }
+    }
+    &--purple {
+        
+        &:hover {
+            box-shadow: 0 1px 10px $purple-clr;
+        }
+    }
+    &--orange {
+        
+        &:hover {
+            box-shadow: 0 1px 10px $orange-clr;
+        }
+    }
 }

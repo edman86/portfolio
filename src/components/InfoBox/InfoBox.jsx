@@ -64,13 +64,15 @@ const InfoBox = ({ isOpen, setOpen, current }) => {
                 <section className="infobox__description" ref={decriptionRef}></section>
 
                 <h2 className="infobox__title">{`Tech stack`}</h2>
-                
+
                 <ul className="infobox__categories">
                     {currentProject.stack.map((item, index) => {
                         return (
-                            <li key={index} className="infobox__category-item">
-                                {item}
-                            </li>
+                            <a href={item.link} className="infobox__category-link">
+                                <li key={index} className="infobox__category-item">
+                                    {item.name}
+                                </li>
+                            </a>
                         );
                     })}
                 </ul>

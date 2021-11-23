@@ -1,5 +1,7 @@
+@import '../../variables';
+
 .header {
-    background-color: rgb(77, 107, 147);
+    background-color: $background-lighter-clr-dark;
 
     &__content {
         display: flex;
@@ -17,9 +19,12 @@
 
     &__title {
         margin: 0;
-        color: #fff;
         font-size: 2.5rem;
         font-weight: bold;
+        -webkit-text-fill-color: transparent;
+        background: $gradient-blue-background;
+        background-clip: text;
+        color: $primary-clr;
     }
 
     &__subtitle {
@@ -27,5 +32,14 @@
         color: #fff;
         font-weight: normal;
         font-size: 1.2rem;
+    }
+
+    &__icon {
+        color: $primary-clr;
+        transition: color 0.2s linear;
+
+        :hover {
+            color: $primary-dark-clr;
+        } 
     }
 }
